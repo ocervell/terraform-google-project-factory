@@ -54,7 +54,7 @@ locals {
 
 resource "null_resource" "args_missing" {
   count                                                                                           = "${local.args_missing}"
-  "ERROR: Variable `group_name` was passed. Please provide either `org_id` or `domain` variables. ${var.group_name}" = true
+  "ERROR: Variable `group_name` was passed. Please provide either `org_id` or `domain` variables. $${var.group_name}" = true
 }
 
 /******************************************
